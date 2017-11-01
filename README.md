@@ -27,4 +27,4 @@ $ npm run deploy
 ```
 
 ## On your browser on Google App Engine
-https://<your-project-id>.appspot.com/
+https://(your-project-id).appspot.com/
