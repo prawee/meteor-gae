@@ -1,0 +1,20 @@
+# modified by prawee
+entrypoint: meteor run
+env: flex
+runtime: custom
+threadsafe: true
+
+automatic_scaling:
+  max_num_instances: 1
+
+env_variables:
+  ROOT_URL: https://<project-id>.appspot.com
+  DISABLE_WEBSOCKETS: "1"
+
+skip_files:
+- ^(.*/)?\.dockerignore$
+- ^(.*/)?\npm-debug.log$
+- ^(.*/)?\yarn-error.log$
+- ^(.*/)?\.git$
+- ^(.*/)?\.hg$
+- ^(.*/)?\.svn$

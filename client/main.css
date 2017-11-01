@@ -1,0 +1,16 @@
+/* CSS declarations go here */
+body {
+    text-align: center;
+}
+.text-blue {
+    color: blue; 
+}
+.text-red {
+    color: red;
+}
+.text-orange {
+    color: orange;
+}
+.text-green {
+    color: green;
+}

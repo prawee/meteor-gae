@@ -1,0 +1,27 @@
+{
+  "name": "meteor-gae",
+  "version": "1.0.0",
+  "description": "Meteor for Google app engine (Flexible)",
+  "keywords": [
+    "meteor",
+    "google app engine",
+    "flexible",
+    "environment",
+    "google cloud",
+    "gae",
+    "react"
+  ],
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "cleanup": "rm -rf ../bundle/",
+    "dist": "npm run cleanup && meteor build ../ --directory --architecture os.linux.x86_64 --server-only",
+    "predeploy": "npm run dist && cp app.yaml ../bundle/ && cp Dockerfile ../bundle/",
+    "deploy": "npm run predeploy && (cd ../bundle && gcloud app deploy -q)",
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "meteor-node-stubs": "^0.3.2"
+  }
+}
