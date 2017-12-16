@@ -4,6 +4,8 @@ env: flex
 runtime: custom
 threadsafe: true
 
+service: backend
+
 automatic_scaling:
   max_num_instances: 1
 
@@ -18,3 +20,4 @@ skip_files:
 - ^(.*/)?\.git$
 - ^(.*/)?\.hg$
 - ^(.*/)?\.svn$
+- .env
