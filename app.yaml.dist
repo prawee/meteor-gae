@@ -12,6 +12,9 @@ automatic_scaling:
 env_variables:
   ROOT_URL: https://<project-id>.appspot.com
   DISABLE_WEBSOCKETS: "1"
+  MYSQL_DBNAME: <your-database-name>
+  MYSQL_USERNAME: <user-for-mysql>
+  MYSQL_PASSWORD: <password-of-user>
 
 skip_files:
 - ^(.*/)?\.dockerignore$
